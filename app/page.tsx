@@ -2,11 +2,14 @@ import { ChevronDown, FileOutput, Layers, Lock, Search, ShieldCheck } from "luci
 import { BentoCard } from "@/components/marketing/BentoCard";
 import { EmailForm } from "@/components/marketing/EmailForm";
 import { Feature } from "@/components/marketing/Feature";
+import { ParticleBackground } from "@/components/marketing/ParticleBackground";
 import { FAQ } from "@/lib/faq";
 
 export default function Page() {
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-[#090D16] text-slate-50 antialiased selection:bg-indigo-500/40">
+      <ParticleBackground />
+
       {/* Background grid + hero glow */}
       <div
         aria-hidden
@@ -33,9 +36,8 @@ export default function Page() {
           </span>
           OmniArchive
         </a>
-        <span className="inline-flex items-center gap-2 rounded-full border border-indigo-500/30 bg-indigo-500/10 px-3 py-1 text-xs font-medium text-indigo-200 shadow-[0_0_20px_-6px_rgba(99,102,241,0.8)]">
-          <span className="h-1.5 w-1.5 rounded-full bg-indigo-400 shadow-[0_0_8px_#818CF8]" aria-hidden />
-          v1.0 Early Access
+        <span className="inline-flex items-center gap-2 rounded-full border border-purple-500/50 bg-purple-500/10 px-3 py-1 text-xs font-medium text-purple-100 shadow-[0_0_20px_-6px_rgba(139,92,246,0.9)]">
+          ⚡ Private Beta: Lock in 50% Off Pro Lifetime
         </span>
       </header>
 
@@ -55,6 +57,9 @@ export default function Page() {
           </p>
           <div className="mt-10">
             <EmailForm id="waitlist" />
+            <p className="mx-auto mt-1 max-w-md text-center text-xs leading-relaxed text-slate-400">
+              🔒 Free forever for local search. Early access unlocks $19 Pro Lifetime at launch (Standard $39).
+            </p>
           </div>
         </section>
 
@@ -85,22 +90,22 @@ export default function Page() {
 
         {/* Pricing */}
         <section id="pricing" className="mx-auto max-w-4xl px-6 pb-24">
-          <h2 className="text-center text-3xl font-semibold tracking-tight">Pay once, or never</h2>
+          <h2 className="text-center text-3xl font-semibold tracking-tight">Free forever. Pro once.</h2>
           <p className="mx-auto mt-3 max-w-lg text-center text-slate-400">
-            No subscriptions for storing your own data in your own browser.
+            Founding members lock in lifetime Pro access for half the future standard price.
           </p>
           <div className="mt-12 grid gap-4 md:grid-cols-2">
             <div className="rounded-2xl border border-slate-800 bg-[#131B2E] p-8">
-              <h3 className="text-lg font-semibold">Free Forever</h3>
+              <h3 className="text-lg font-semibold">Free Local Vault</h3>
               <p className="mt-4 flex items-baseline gap-1">
                 <span className="text-4xl font-semibold tracking-tight">$0</span>
-                <span className="text-sm text-slate-500">forever</span>
+                <span className="text-sm text-slate-500">/ Forever</span>
               </p>
               <ul className="mt-6 space-y-3">
-                <Feature>Unlimited local browser storage (IndexedDB)</Feature>
-                <Feature>Instant full-text search</Feature>
-                <Feature>Manual chat saves</Feature>
-                <Feature>ChatGPT, Claude &amp; Gemini</Feature>
+                <Feature>Unlimited IndexedDB local chat capture</Feature>
+                <Feature>Instant full-text offline search</Feature>
+                <Feature>Manual prompt saving</Feature>
+                <Feature>Basic Markdown export</Feature>
               </ul>
               <a
                 href="#waitlist"
@@ -113,21 +118,22 @@ export default function Page() {
             <div className="relative rounded-2xl bg-gradient-to-b from-[#6366F1] to-[#8B5CF6] p-px shadow-[0_0_60px_-15px_rgba(99,102,241,0.8)]">
               <div className="h-full rounded-[15px] bg-[#131B2E] p-8">
                 <div className="flex items-center justify-between">
-                  <h3 className="text-lg font-semibold">Pro Lifetime</h3>
-                  <span className="rounded-full bg-indigo-500/15 px-2.5 py-0.5 text-xs font-medium text-indigo-200">
-                    One-time
+                  <h3 className="text-lg font-semibold">Pro Lifetime (Founding Member)</h3>
+                  <span className="rounded-full border border-purple-500/50 bg-purple-500/15 px-2.5 py-0.5 text-xs font-medium text-purple-200 shadow-[0_0_18px_-6px_rgba(168,85,247,0.9)]">
+                    50% OFF FOR EARLY ACCESS
                   </span>
                 </div>
-                <p className="mt-4 flex items-baseline gap-1">
+                <p className="mt-4 flex flex-wrap items-baseline gap-x-2 gap-y-1">
                   <span className="text-4xl font-semibold tracking-tight">$19</span>
-                  <span className="text-sm text-slate-500">one-time</span>
+                  <span className="text-lg text-slate-500 line-through">$39</span>
+                  <span className="w-full text-sm text-slate-400">One-time payment, zero subscriptions.</span>
                 </p>
                 <ul className="mt-6 space-y-3">
                   <Feature>Everything in Free</Feature>
-                  <Feature>Batch exports</Feature>
-                  <Feature>Custom formatting templates</Feature>
-                  <Feature>Optional end-to-end encrypted backup</Feature>
-                  <Feature>Pay once, own it forever</Feature>
+                  <Feature>Flawless PDF and Notion exports</Feature>
+                  <Feature>Multi-format code formatting engine</Feature>
+                  <Feature>Batch thread exports</Feature>
+                  <Feature>Custom prompt library templates</Feature>
                 </ul>
                 <a
                   href="#waitlist"

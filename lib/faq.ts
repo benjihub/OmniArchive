@@ -12,8 +12,8 @@ export const FAQ = [
     a: "ChatGPT, Claude, and Gemini, all in one searchable library. You can search across platforms from a single box instead of remembering which tool you used.",
   },
   {
-    q: "Is the Pro price really a one-time payment?",
-    a: "Yes. Pro Lifetime is $19, paid once. There is no subscription and no renewal. Free stays free: unlimited local storage, instant search, and manual saves have no time limit.",
+    q: "Is this really a one-time payment?",
+    a: "Yes. Core local search and capture are free forever. The early access list locks in the $19 Pro Lifetime tier (regularly $39) with no recurring monthly subscriptions.",
   },
   {
     q: "What happens to my exports if I stop using OmniArchive?",
