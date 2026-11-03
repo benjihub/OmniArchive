@@ -14,7 +14,6 @@ declare global {
 }
 
 const particleOptions: Record<string, unknown> = {
-  background: { color: { value: "#090D16" } },
   particles: {
     number: { value: 60, density: { enable: true } },
     color: { value: ["#6366F1", "#8B5CF6", "#94A3B8"] },

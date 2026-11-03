@@ -42,7 +42,7 @@ export function EmailForm({ id }: { id?: string }) {
         className="mx-auto flex w-full max-w-md items-center justify-center gap-2 rounded-xl border border-indigo-500/30 bg-indigo-500/10 px-4 py-3.5 text-sm text-slate-50"
       >
         <Check className="h-4 w-4 text-indigo-400" aria-hidden />
-        You are on the list. We will email you when early access opens.
+        You are on the list. We will email when the beta opens and share the founding offer.
       </div>
     );
   }
@@ -72,7 +72,7 @@ export function EmailForm({ id }: { id?: string }) {
             <Loader2 className="h-4 w-4 animate-spin" aria-hidden />
           ) : (
             <>
-              Get Early Access
+              Join the waitlist
               <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" aria-hidden />
             </>
           )}

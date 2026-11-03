@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "OmniArchive — Your AI conversations, yours to keep",
-  description: "A local-first vault for searching, organizing, and exporting your AI conversations.",
+  title: "OmniArchive — A private AI chat archive you can take with you",
+  description: "Capture, search, back up, and export ChatGPT, Claude, and Gemini conversations in one local-first archive.",
   openGraph: {
-    title: "OmniArchive — Your AI conversations, yours to keep",
-    description: "A private, local-first vault for ChatGPT, Claude, and Gemini.",
+    title: "OmniArchive — A private AI chat archive you can take with you",
+    description: "Capture, search, back up, and export ChatGPT, Claude, and Gemini conversations in one local-first archive.",
     type: "website",
     images: [
       {
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "OmniArchive — Your AI conversations, yours to keep",
-    description: "A private, local-first vault for ChatGPT, Claude, and Gemini.",
+    title: "OmniArchive — A private AI chat archive you can take with you",
+    description: "Capture, search, back up, and export ChatGPT, Claude, and Gemini conversations in one local-first archive.",
     images: ["/opengraph-image"],
   },
 };

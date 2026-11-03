@@ -1,22 +1,26 @@
 export const FAQ = [
   {
     q: "Where is my chat history stored?",
-    a: "Only on your device, in your browser's local IndexedDB storage. OmniArchive has no servers that receive your chats, no accounts, and no telemetry. If you uninstall the extension and clear its data, the data is gone.",
+    a: "Captured conversations are stored in the extension's local browser database on your device. OmniArchive does not upload your chat content. Export an .oav backup before clearing extension data or uninstalling, because local browser data can be removed with the extension.",
   },
   {
-    q: "Will it slow down my browser or the AI sites?",
-    a: "No. OmniArchive only runs on the chat pages it supports, saves conversations when you ask it to, and builds its search index in the background so the page stays responsive. Search runs against local data, so results appear instantly even with thousands of chats.",
+    q: "Which AI platforms does OmniArchive support?",
+    a: "The extension currently supports ChatGPT, Claude, and Gemini. It captures conversations on supported chat pages and brings them into one local vault.",
   },
   {
-    q: "Which platforms does it support?",
-    a: "ChatGPT, Claude, and Gemini, all in one searchable library. You can search across platforms from a single box instead of remembering which tool you used.",
+    q: "Can I bring in my old chat history?",
+    a: "OmniArchive Pro is planned to import supported ChatGPT, Claude, and Gemini history export files. Import support depends on the structure of each platform's export. Restoring an OmniArchive .oav backup remains free.",
   },
   {
-    q: "Is this really a one-time payment?",
-    a: "Yes. Core local search and capture are free forever. The early access list locks in the $19 Pro Lifetime tier (regularly $39) with no recurring monthly subscriptions.",
+    q: "What can I export for free?",
+    a: "You can export an individual conversation to Markdown or PDF and download a portable .oav backup containing your local archive. Pro adds folder-level Markdown export.",
   },
   {
-    q: "What happens to my exports if I stop using OmniArchive?",
-    a: "Your exports are plain Markdown, Notion-ready files, and PDFs. They belong to you and open anywhere, with no extension required.",
+    q: "Is Pro a subscription, and can I buy it now?",
+    a: "Pro is planned as a $19 one-time founding offer at beta launch, with a planned standard price of $39. Checkout is not open yet; join the waitlist and we'll email when the offer is available. There are no recurring subscriptions planned.",
+  },
+  {
+    q: "What information leaves my device?",
+    a: "Your archived conversation text stays local. If you join the waitlist, your email is sent to our email provider. Pro license activation sends a Paddle transaction ID to our verification endpoint; it does not send your chats.",
   },
 ] as const;
